@@ -1,0 +1,119 @@
+/* Podstawowe style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Nagłówek */
+header {
+    background: #e10600; /* Kolor F1 */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.motto {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Nawigacja */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Dynamika: przejście */
+}
+
+nav a:hover {
+    color: #333; /* Dynamika: hover */
+}
+
+/* Artykuł */
+main {
+    background: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #e10600;
+}
+
+blockquote {
+    border-left: 5px solid #e10600;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #f9f9f9;
+    font-size: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.5s ease; /* Dynamika: płynne skalowanie */
+}
+
+img:hover {
+    transform: scale(1.02); /* Dynamika: hover na obrazku */
+}
+
+/* Dynamika: Animacja wejścia (Fade In) */
+.fade-in {
+    animation: fadeInAnimation 1.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stopka */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e10600;
+    text-decoration: none;
+}
